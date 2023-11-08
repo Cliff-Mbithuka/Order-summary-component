@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url();
+    overflow: hidden;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 100vh;
+}
+.top{
+
+}
+.bottom{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h3{
+    margin: 20px;
+}
+.bottom p{
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 10px;
+}
+.annual{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color:  hsl(225, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.annual-plan{
+    display: flex;
+    flex-direction: row;
+
+}
