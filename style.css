@@ -14,9 +14,10 @@ body{
    min-height: 100vh;
 }
 img{
-    max-width: 100;
+    max-width: 100%;
+   
 }
-button{
+buttons{
     font-family: inherit;
 }
 .bg_image{
@@ -35,7 +36,7 @@ z-index: -1;
     padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
-    
+    width: 400px;
 }
 .container img.hero{
     width: 100%;
@@ -46,24 +47,26 @@ z-index: -1;
     padding: 10px;
     width: 90%;
     background-color: hsl(225, 100%, 98%);
-    border-radius: 5px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 article{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container .annual-plan article img{
-    margin-right: 10px;
+    margin-right: 20px;
 }
-.h1{
+.container h1{
     color: hsl(223, 47%, 23%);
-    margin: 10px 0;
+    margin: 25px;
+    font-size: 32px;
 }
-.p{
+.container p{
     font-size: 16px;
     line-height: 1.6;
     color: hsl(224, 23%, 55%);
@@ -73,9 +76,10 @@ article{
    padding: 5px 10px;
    border-radius: 10px;
    font-weight: bold;
-   font-size: 16px;
+   font-size: small;
    cursor: pointer;
    transition: all ease-in-out;
+   
 }
 .btn-change{
     background-color: transparent;
@@ -88,6 +92,9 @@ article{
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
+    width: 90%;
+    margin-left: 40px;
+
 }
 .btn-primary:hover, .btn-change{
     opacity: 0.8;
@@ -95,6 +102,9 @@ article{
 .btn-secondary{
     background-color: transparent;
     color: hsl(224, 23%, 55%);
+    border: none;
+    font-size: small;
+    margin-left: 40px;
 }
 .btn-secondary:hover{
     color: hsl(223, 47%, 23%);
@@ -104,6 +114,7 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
 }
 @media  (max-width: 768px) {
     .bg_image{
@@ -111,6 +122,10 @@ article{
         height: 400px;
     }
     .container{
-        width: 300px;
+        width: 100%;
+    }
+    .annual-plan{
+        display: flex;
+        flex-direction: column;
     }
 }
