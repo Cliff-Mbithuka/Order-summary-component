@@ -19,21 +19,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-.bg_image {
-  background: url(images/pattern-background-desktop.svg) no-repeat center
-    center/cover;
-  height: 500px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Pale-blue);
 }
 .container {
   background-color: #fff;
   border-radius: 30px;
+  max-width: 450px;
 }
 .hero {
   width: 100%;
@@ -85,6 +79,8 @@ article img {
   border: none;
   background-color: var(--Bright-blue);
   color: white;
+  font-size: 16px;
+  font-weight: bold;
   width: 95%;
   box-shadow: 3px 3px 10px #888888;
   cursor: pointer;
@@ -94,16 +90,25 @@ article img {
   color: var(--Desaturated-blue);
   background-color: transparent;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
-  .annual-plan {
-    flex-direction: column;
-    width: 90%;
+  .container {
+    max-width: 87%;
+    border-radius: 20px;
   }
   .top-btn {
     width: auto;
   }
   body {
-    padding: 20px; /* Add some padding to the body for smaller screens */
+    background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .annual-plan {
+    padding: 12px;
+  }
+  .hero {
+    border-radius: 20px 20px 0 0;
   }
 }
